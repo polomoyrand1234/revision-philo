@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Philo — Menu</title>
+  <link rel="stylesheet" href="reset.css" />
+</head>
+<body>
+  <main class="page menu-page">
+    <header class="menu-hero">
+      <div class="menu-hero__top">
+        <span class="chip chip--glow">Terminale • Philosophie</span>
+        <a class="btn btn-ghost" href="#themes">Aller aux thèmes ↓</a>
+      </div>
+
+      <div class="menu-hero__content">
+        <h1 class="menu-title">Ton espace de révision — Philo</h1>
+        <p class="menu-subtitle">
+          Clique sur un thème pour ouvrir la page correspondante. Tu peux aussi rechercher un thème.
+        </p>
+
+        <div class="menu-tools">
+          <label class="search">
+            <span class="search__icon">⌕</span>
+            <input id="searchInput" type="search" placeholder="Rechercher : vérité, liberté, science..." autocomplete="off" />
+          </label>
+
+          <div class="quick-tags" aria-label="Filtres rapides">
+            <button class="tag-btn" data-filter="all" type="button">Tout</button>
+			<button class="tag-btn" data-filter="methodes" type="button">methodes</button>
+            <button class="tag-btn" data-filter="morale" type="button">Morale</button>
+            <button class="tag-btn" data-filter="politique" type="button">Politique</button>
+            <button class="tag-btn" data-filter="connaissance" type="button">Connaissance</button>
+            <button class="tag-btn" data-filter="humain" type="button">Humain</button>
+          </div>
+        </div>
+      </div>
+    </header>
+	
+	<section class="theme-grid">
+	  <a class="theme-card" href="methodes.html" data-tags="methodes">
+	    <div class="theme-card__icon">📘</div>
+	    <div class="theme-card__body">
+	      <h3>Méthodes</h3>
+	      <p>Dissertation, explication de texte, repères.</p>
+	    </div>
+	    <span class="theme-card__pill">Ouvrir →</span>
+	  </a>
+	</section>
+	
+    <section id="themes" class="section-head">
+      <h2>Thèmes</h2>
+      <p class="muted">Cartes cliquables • Accès direct • Design “propre”.</p>
+    </section>
+	
+    <section class="theme-grid" id="themeGrid">
+      <!-- Chaque carte a des "data-tags" pour filtrer -->
+      <a class="theme-card" href="art.html" data-tags="humain connaissance">
+        <div class="theme-card__icon">🎨</div>
+        <div class="theme-card__body">
+          <h3>L’art</h3>
+          <p>Créer, imiter, juger, beauté.</p>
+        </div>
+        <span class="theme-card__pill">Voir →</span>
+      </a>
+
+      <a class="theme-card" href="bonheur.html" data-tags="humain morale">
+        <div class="theme-card__icon">🌤️</div>
+        <div class="theme-card__body">
+          <h3>Le bonheur</h3>
+          <p>Désir, plaisir, sagesse, bonheur.</p>
+        </div>
+        <span class="theme-card__pill">Voir →</span>
+      </a>
+
+      <a class="theme-card" href="conscience.html" data-tags="humain connaissance">
+        <div class="theme-card__icon">🧠</div>
+        <div class="theme-card__body">
+          <h3>La conscience</h3>
+          <p>Moi, perception, réflexion.</p>
+        </div>
+        <span class="theme-card__pill">Voir →</span>
+      </a>
+
+      <a class="theme-card" href="inconscient.html" data-tags="humain connaissance">
+        <div class="theme-card__icon">🌙</div>
+        <div class="theme-card__body">
+          <h3>L’inconscient</h3>
+          <p>Désirs, rêves, pulsions.</p>
+        </div>
+        <span class="theme-card__pill">Voir →</span>
+      </a>
+
+      <a class="theme-card" href="devoir.html" data-tags="morale humain">
+        <div class="theme-card__icon">⚖️</div>
+        <div class="theme-card__body">
+          <h3>Le devoir</h3>
+          <p>Obligation, morale, loi.</p>
+        </div>
+        <span class="theme-card__pill">Voir →</span>
+      </a>
+
+      <a class="theme-card" href="justice.html" data-tags="morale politique">
+        <div class="theme-card__icon">🏛️</div>
+        <div class="theme-card__body">
+          <h3>La justice</h3>
+          <p>Droit, égalité, mérite.</p>
+        </div>
+        <span class="theme-card__pill">Voir →</span>
+      </a>
+
+      <a class="theme-card" href="etat.html" data-tags="politique">
+        <div class="theme-card__icon">🏛️</div>
+        <div class="theme-card__body">
+          <h3>L’État</h3>
+          <p>Souveraineté, loi, puissance.</p>
+        </div>
+        <span class="theme-card__pill">Voir →</span>
+      </a>
+
+      <a class="theme-card" href="liberte.html" data-tags="politique morale humain">
+        <div class="theme-card__icon">🕊️</div>
+        <div class="theme-card__body">
+          <h3>La liberté</h3>
+          <p>Choix, déterminisme, responsabilité.</p>
+        </div>
+        <span class="theme-card__pill">Voir →</span>
+      </a>
+
+      <a class="theme-card" href="langage.html" data-tags="connaissance humain">
+        <div class="theme-card__icon">🗣️</div>
+        <div class="theme-card__body">
+          <h3>Le langage</h3>
+          <p>Signes, sens, vérité.</p>
+        </div>
+        <span class="theme-card__pill">Voir →</span>
+      </a>
+
+      <a class="theme-card" href="nature.html" data-tags="connaissance">
+        <div class="theme-card__icon">🌿</div>
+        <div class="theme-card__body">
+          <h3>La nature</h3>
+          <p>Nature/culture, limites.</p>
+        </div>
+        <span class="theme-card__pill">Voir →</span>
+      </a>
+
+      <a class="theme-card" href="raison.html" data-tags="connaissance">
+        <div class="theme-card__icon">🧩</div>
+        <div class="theme-card__body">
+          <h3>La raison</h3>
+          <p>Logique, méthode, critique.</p>
+        </div>
+        <span class="theme-card__pill">Voir →</span>
+      </a>
+
+      <a class="theme-card" href="religion.html" data-tags="connaissance morale">
+        <div class="theme-card__icon">⛪</div>
+        <div class="theme-card__body">
+          <h3>La religion</h3>
+          <p>Foi, croyance, morale.</p>
+        </div>
+        <span class="theme-card__pill">Voir →</span>
+      </a>
+
+      <a class="theme-card" href="science.html" data-tags="connaissance">
+        <div class="theme-card__icon">🔬</div>
+        <div class="theme-card__body">
+          <h3>La science</h3>
+          <p>Preuve, théorie, méthode.</p>
+        </div>
+        <span class="theme-card__pill">Voir →</span>
+      </a>
+
+      <a class="theme-card" href="technique.html" data-tags="connaissance">
+        <div class="theme-card__icon">⚙️</div>
+        <div class="theme-card__body">
+          <h3>La technique</h3>
+          <p>Progrès, puissance, risques.</p>
+        </div>
+        <span class="theme-card__pill">Voir →</span>
+      </a>
+
+      <a class="theme-card" href="temps.html" data-tags="humain connaissance">
+        <div class="theme-card__icon">⏳</div>
+        <div class="theme-card__body">
+          <h3>Le temps</h3>
+          <p>Durée, mémoire, présent.</p>
+        </div>
+        <span class="theme-card__pill">Voir →</span>
+      </a>
+
+      <a class="theme-card" href="travail.html" data-tags="politique humain">
+        <div class="theme-card__icon">🛠️</div>
+        <div class="theme-card__body">
+          <h3>Le travail</h3>
+          <p>Valeur, aliénation, technique.</p>
+        </div>
+        <span class="theme-card__pill">Voir →</span>
+      </a>
+
+      <a class="theme-card" href="verite.html" data-tags="connaissance morale">
+        <div class="theme-card__icon">✅</div>
+        <div class="theme-card__body">
+          <h3>La vérité</h3>
+          <p>Erreur, preuve, mensonge.</p>
+        </div>
+        <span class="theme-card__pill">Voir →</span>
+      </a>
+    </section>
+
+    <footer class="footer footer--menu">
+      <div class="muted">Astuce : ajoute tes photos dans <code>assets/&lt;theme&gt;/01.jpg</code>, etc.</div>
+      <a class="btn" href="#top">Remonter ↑</a>
+    </footer>
+  </main>
+
+  <script>
+    // Filtre recherche + tags (petit JS embarqué ici, pas besoin de toucher app.js)
+    const input = document.getElementById('searchInput');
+    const grid = document.getElementById('themeGrid');
+    const cards = Array.from(grid.querySelectorAll('.theme-card'));
+    const tagBtns = Array.from(document.querySelectorAll('.tag-btn'));
+
+    let activeFilter = 'all';
+
+    function applyFilters() {
+      const q = (input.value || '').trim().toLowerCase();
+
+      cards.forEach(card => {
+        const text = (card.innerText || '').toLowerCase();
+        const tags = (card.getAttribute('data-tags') || '').toLowerCase();
+        const okSearch = !q || text.includes(q);
+        const okTag = activeFilter === 'all' || tags.includes(activeFilter);
+        card.style.display = (okSearch && okTag) ? '' : 'none';
+      });
+    }
+
+    input.addEventListener('input', applyFilters);
+
+    tagBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tagBtns.forEach(b => b.classList.remove('tag-btn--active'));
+        btn.classList.add('tag-btn--active');
+        activeFilter = btn.getAttribute('data-filter');
+        applyFilters();
+      });
+    });
+
+    // active par défaut
+    tagBtns[0].classList.add('tag-btn--active');
+  </script>
+</body>
+</html>
